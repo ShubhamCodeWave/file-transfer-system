@@ -1,0 +1,129 @@
+body {
+  background-color: #f8f9fa;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  transition: background-color 0.5s ease;
+}
+
+header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #343a40;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+header p {
+  font-size: 1rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+form label {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+form .form-text {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+input[type="text"],
+input[type="file"] {
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.btn-success,
+.btn-secondary {
+  padding: 0.5rem 1.25rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-success:hover,
+.btn-secondary:hover {
+  transform: translateY(-2px);
+}
+
+.btn-success i,
+.btn-secondary i {
+  margin-right: 5px;
+}
+
+#progressContainer {
+  margin-top: 20px;
+  transition: opacity 0.4s ease-in-out;
+}
+
+#progressBar {
+  height: 28px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: width 0.4s ease-in-out;
+}
+
+footer {
+  background-color: #e9ecef;
+  padding: 2rem 1rem;
+  margin-top: auto;
+  border-top: 1px solid #dee2e6;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+footer h5 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+footer p {
+  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+}
+
+footer small {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+:focus {
+  outline: 2px solid #0d6efd;
+  outline-offset: 2px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.visually-hidden[aria-live] {
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+}
